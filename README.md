@@ -1,2 +1,2 @@
 # Web-Programming-Lab
-Web Programming lab assessments demonstrating HTML, CSS and JavaScript concepts through practical implementations.
+Collection of Web Programming lab implementations demonstrating core concepts of HTML, CSS, JavaScript, DOM manipulation and interactive web development.
