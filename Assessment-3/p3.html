@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Email Address Generator</title>
+</head>
+
+<body>
+
+<pre>
+&lt;!-- Name: G Yeshwanth Surya --&gt;
+&lt;!-- Registration Number: 24BCT0041 --&gt;
+</pre>
+
+<h2>Email Address Generator</h2>
+
+<form id="emailForm">
+
+First Name:
+<input type="text" name="fname"><br><br>
+
+Last Name:
+<input type="text" name="lname"><br><br>
+
+<button type="button" onclick="generateEmail(this.form)">
+Generate Email
+</button>
+
+</form>
+
+<p id="result"></p>
+
+<script>
+
+function generateEmail(form)
+{
+
+var first = form.elements["fname"].value;
+var last = form.elements["lname"].value;
+
+var email = first + "." + last + "@park.edu";
+
+document.getElementById("result").innerHTML =
+"Generated Email: " + email;
+
+form.reset();
+
+form.elements["fname"].focus();
+
+}
+
+</script>
+
+</body>
+</html>

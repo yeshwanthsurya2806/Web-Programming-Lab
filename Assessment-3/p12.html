@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Skills Validation</title>
+</head>
+
+<body>
+
+<pre>
+&lt;!-- Name: G Yeshwanth Surya --&gt;
+&lt;!-- Registration Number: 24BCT0041 --&gt;
+</pre>
+
+<h2>Select Your Job Skills</h2>
+
+<form id="skillsForm">
+
+<input type="checkbox" name="skill" value="JavaScript"> JavaScript<br>
+<input type="checkbox" name="skill" value="HTML"> HTML<br>
+<input type="checkbox" name="skill" value="CSS"> CSS<br>
+<input type="checkbox" name="skill" value="Python"> Python<br>
+<input type="checkbox" name="skill" value="Java"> Java<br>
+
+<br>
+<button type="button" onclick="validateSkills()">Submit</button>
+
+</form>
+
+<p id="result"></p>
+
+<script>
+
+function validateSkills()
+{
+
+var skills = document.getElementsByName("skill");
+
+var selected = [];
+
+for(var i = 0; i < skills.length; i++)
+{
+
+if(skills[i].checked)
+{
+
+selected.push(skills[i].value);
+
+}
+
+}
+
+if(selected.length < 3)
+{
+
+document.getElementById("result").innerHTML =
+"Error: Please select at least 3 skills.";
+
+}
+
+else
+{
+
+document.getElementById("result").innerHTML =
+"Selected Skills: " + selected.join(", ");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

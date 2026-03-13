@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Order Form</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f2f2f2;
+}
+
+fieldset{
+margin:10px;
+padding:10px;
+border:2px solid #444;
+}
+
+button{
+margin-top:10px;
+padding:6px 12px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<pre>
+&lt;!-- Name: G Yeshwanth Surya --&gt;
+&lt;!-- Registration Number: 24BCT0041 --&gt;
+</pre>
+
+<h2>Product Order Form</h2>
+
+<form id="orderForm">
+
+<fieldset>
+<legend>Electronics</legend>
+
+<input type="checkbox" name="item" value="500"> Headphones - ₹500<br>
+<input type="checkbox" name="item" value="1500"> Keyboard - ₹1500<br>
+
+</fieldset>
+
+<fieldset>
+<legend>Accessories</legend>
+
+<input type="checkbox" name="item" value="300"> Mouse Pad - ₹300<br>
+<input type="checkbox" name="item" value="700"> USB Drive - ₹700<br>
+
+</fieldset>
+
+<button type="button" onclick="calculateTotal()">Calculate Total</button>
+
+</form>
+
+<p id="result"></p>
+
+<script>
+
+function calculateTotal()
+{
+
+var items = document.querySelectorAll('input[name="item"]:checked');
+
+var total = 0;
+
+for (var item of items)
+{
+
+total = total + parseFloat(item.value);
+
+}
+
+document.getElementById("result").innerHTML =
+"Total Price: ₹ " + total;
+
+}
+
+</script>
+
+</body>
+</html>

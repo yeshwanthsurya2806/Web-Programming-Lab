@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Print Numbers using While Loop</title>
+</head>
+
+<body>
+
+<pre>
+&lt;!-- Name: G Yeshwanth Surya --&gt;
+&lt;!-- Registration Number: 24BCT0041 --&gt;
+</pre>
+
+<h2>Print Numbers from 1 to N</h2>
+
+Enter N:
+<input type="text" id="number">
+
+<button onclick="printNumbers()">Print</button>
+
+<p id="result"></p>
+
+<script>
+
+function printNumbers()
+{
+
+var n = document.getElementById("number").value;
+
+var i = 1;
+var output = "";
+
+while(i <= n)
+{
+output = output + i + " ";
+i++;
+}
+
+document.getElementById("result").innerHTML =
+"Numbers: " + output;
+
+}
+
+</script>
+
+</body>
+</html>

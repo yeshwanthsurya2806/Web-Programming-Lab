@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multiplication Table using Do-While Loop</title>
+</head>
+
+<body>
+
+<pre>
+&lt;!-- Name: G Yeshwanth Surya --&gt;
+&lt;!-- Registration Number: 24BCT0041 --&gt;
+</pre>
+
+<h2>Multiplication Table Generator</h2>
+
+Enter a number:
+<input type="text" id="num">
+
+<button onclick="generateTable()">Generate Table</button>
+
+<p id="result"></p>
+
+<script>
+
+function generateTable()
+{
+
+var number = document.getElementById("num").value;
+
+var i = 1;
+var output = "";
+
+do
+{
+output = output + number + " × " + i + " = " + (number*i) + "<br>";
+i++;
+
+} while(i <= 10);
+
+document.getElementById("result").innerHTML = output;
+
+}
+
+</script>
+
+</body>
+</html>

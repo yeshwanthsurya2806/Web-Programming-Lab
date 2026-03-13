@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Customization Tool</title>
+
+<style>
+
+#textBox{
+padding:20px;
+border:2px solid black;
+margin-top:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<pre>
+&lt;!-- Name: G Yeshwanth Surya --&gt;
+&lt;!-- Registration Number: 24BCT0041 --&gt;
+</pre>
+
+<h2>Dynamic Font Customization Tool</h2>
+
+<fieldset>
+
+<legend>Font Controls</legend>
+
+Font Size:
+<input type="range" min="10" max="60" value="20" id="sizeSlider" oninput="changeFontSize()">
+<br><br>
+
+Text Color:
+<input type="color" id="textColor" onchange="changeTextColor()">
+<br><br>
+
+Background Color:
+<input type="color" id="bgColor" onchange="changeBackgroundColor()">
+
+</fieldset>
+
+<div id="textBox">
+This is a sample text for font customization.
+</div>
+
+<script>
+
+function changeFontSize()
+{
+var size = document.getElementById("sizeSlider").value;
+document.getElementById("textBox").style.fontSize = size + "px";
+}
+
+function changeTextColor()
+{
+var color = document.getElementById("textColor").value;
+document.getElementById("textBox").style.color = color;
+}
+
+function changeBackgroundColor()
+{
+var bg = document.getElementById("bgColor").value;
+document.getElementById("textBox").style.backgroundColor = bg;
+}
+
+</script>
+
+</body>
+</html>

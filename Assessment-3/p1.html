@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello World Button</title>
+</head>
+
+<body>
+
+<pre>
+&lt;!-- Name: G Yeshwanth Surya --&gt;
+&lt;!-- Registration Number: 24BCT0041 --&gt;
+</pre>
+
+<h2>Click the Button to Display Message</h2>
+
+<button onclick="showMessage()">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+var message = "Hello, world!";
+
+function showMessage(){
+document.getElementById("demo").outerHTML = "<p>" + message + "</p>";
+}
+</script>
+
+</body>
+</html>

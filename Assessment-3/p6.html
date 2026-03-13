@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Student Information System</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f2f2f2;
+text-align:center;
+}
+
+form{
+background:white;
+padding:20px;
+width:300px;
+margin:auto;
+border-radius:10px;
+}
+
+table{
+margin:auto;
+margin-top:20px;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid black;
+padding:8px;
+}
+
+button{
+padding:6px 12px;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<pre>
+&lt;!-- Name: G Yeshwanth Surya --&gt;
+&lt;!-- Registration Number: 24BCT0041 --&gt;
+</pre>
+
+<h2>Student Information System</h2>
+
+<form id="studentForm">
+
+Name<br>
+<input type="text" id="name"><br><br>
+
+Age<br>
+<input type="number" id="age"><br><br>
+
+Department<br>
+<input type="text" id="dept"><br><br>
+
+<button type="button" onclick="addStudent()">Add Student</button>
+<button type="button" onclick="clearForm()">Reset</button>
+
+</form>
+
+<table id="studentTable">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Department</th>
+</tr>
+
+</table>
+
+<script>
+
+var students = [];
+
+function Student(name,age,dept)
+{
+this.name = name;
+this.age = age;
+this.dept = dept;
+
+this.display = function()
+{
+return "<tr><td>"+this.name+"</td><td>"+this.age+"</td><td>"+this.dept+"</td></tr>";
+}
+
+}
+
+function addStudent()
+{
+
+var name = document.getElementById("name").value;
+var age = document.getElementById("age").value;
+var dept = document.getElementById("dept").value;
+
+var student = new Student(name,age,dept);
+
+students.push(student);
+
+generateTable();
+
+clearForm();
+
+}
+
+function generateTable()
+{
+
+var table = document.getElementById("studentTable");
+
+table.innerHTML =
+"<tr><th>Name</th><th>Age</th><th>Department</th></tr>";
+
+for(var i=0;i<students.length;i++)
+{
+table.innerHTML += students[i].display();
+}
+
+}
+
+function clearForm()
+{
+
+document.getElementById("studentForm").reset();
+
+document.getElementById("name").focus();
+
+}
+
+</script>
+
+</body>
+</html>

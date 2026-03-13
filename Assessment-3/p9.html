@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Radio Button Color Change</title>
+</head>
+
+<body>
+
+<pre>
+&lt;!-- Name: G Yeshwanth Surya --&gt;
+&lt;!-- Registration Number: 24BCT0041 --&gt;
+</pre>
+
+<h2>Select a Color</h2>
+
+<input type="radio" name="color" value="red"> Red
+<br>
+
+<input type="radio" name="color" value="green"> Green
+<br>
+
+<input type="radio" name="color" value="blue"> Blue
+<br><br>
+
+<button onclick="changeColor()">Apply Color</button>
+
+<script>
+
+function changeColor()
+{
+
+var colors = document.getElementsByName("color");
+
+for(var i = 0; i < colors.length; i++)
+{
+
+if(colors[i].checked)
+{
+
+document.body.style.backgroundColor = colors[i].value;
+
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

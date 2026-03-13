@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text Styling Application</title>
+
+<style>
+
+.bold{
+font-weight:bold;
+}
+
+.italic{
+font-style:italic;
+}
+
+.smallcaps{
+font-variant:small-caps;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<pre>
+&lt;!-- Name: G Yeshwanth Surya --&gt;
+&lt;!-- Registration Number: 24BCT0041 --&gt;
+</pre>
+
+<h2>Text Styling Application</h2>
+
+<div id="message">
+Welcome to the Text Styling Application
+</div>
+
+<br>
+
+<fieldset>
+
+<legend>Choose Text Style</legend>
+
+<button onclick="applyStyle('bold')">Bold</button>
+
+<button onclick="applyStyle('italic')">Italic</button>
+
+<button onclick="applyStyle('smallcaps')">Small Caps</button>
+
+<button onclick="applyStyle('bold italic')">Bold + Italic</button>
+
+</fieldset>
+
+<script>
+
+function applyStyle(style)
+{
+
+document.getElementById("message").className = style;
+
+}
+
+</script>
+
+</body>
+</html>

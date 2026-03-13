@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+</head>
+
+<body>
+
+<pre>
+&lt;!-- Name: G Yeshwanth Surya --&gt;
+&lt;!-- Registration Number: 24BCT0041 --&gt;
+</pre>
+
+<h2>Simple Calculator</h2>
+
+Number 1:
+<input type="number" id="num1" step="any"><br><br>
+
+Number 2:
+<input type="number" id="num2" step="any"><br><br>
+
+<button onclick="calculate('+')">Add</button>
+<button onclick="calculate('-')">Subtract</button>
+<button onclick="calculate('*')">Multiply</button>
+<button onclick="calculate('/')">Divide</button>
+
+<p id="result"></p>
+
+<script>
+
+function calculate(operation)
+{
+
+var number1 = parseFloat(document.getElementById("num1").value);
+var number2 = parseFloat(document.getElementById("num2").value);
+
+var result;
+
+switch(operation)
+{
+
+case '+':
+result = number1 + number2;
+break;
+
+case '-':
+result = number1 - number2;
+break;
+
+case '*':
+result = number1 * number2;
+break;
+
+case '/':
+if(number2 == 0)
+{
+document.getElementById("result").innerHTML =
+"Division by zero is not allowed";
+return;
+}
+result = number1 / number2;
+break;
+
+}
+
+document.getElementById("result").innerHTML =
+"Result: " + result;
+
+}
+
+</script>
+
+</body>
+</html>
