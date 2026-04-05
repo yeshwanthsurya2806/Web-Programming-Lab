@@ -1,0 +1,28 @@
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  color: #007bff;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+}

@@ -1,0 +1,35 @@
+.grade-container {
+  width: 320px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #444;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.grade-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.grade-container button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grade-container button:hover {
+  background-color: darkgreen;
+}
+
+h3 {
+  margin-top: 10px;
+}

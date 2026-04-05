@@ -1,0 +1,42 @@
+.q3-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.q3-preview img {
+  width: 60%;
+  max-width: 600px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.q3-preview img:hover {
+  transform: scale(1.05);
+}
+
+.q3-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.q3-gallery img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.q3-gallery img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.q3-gallery img.active {
+  border: 3px solid #007bff;
+  transform: scale(1.1);
+}

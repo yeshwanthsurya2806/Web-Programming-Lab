@@ -1,0 +1,43 @@
+.todo-container {
+  width: 320px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.todo-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.todo-container button {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-container button:hover {
+  background-color: darkmagenta;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #eee;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+}

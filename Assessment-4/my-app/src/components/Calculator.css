@@ -1,0 +1,45 @@
+.calc-container {
+  width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* Inputs */
+.calc-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button Group */
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+/* Buttons */
+.btn-group button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-group button:hover {
+  background-color: #0056b3;
+}
+
+/* Result */
+h3 {
+  margin-top: 15px;
+  color: #333;
+}
